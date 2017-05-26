@@ -1,29 +1,14 @@
 import React from 'react'
 
-import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
-
-var products = [{
-      id: 1,
-      name: "Item name 1",
-      price: 100
-  },{
-      id: 2,
-      name: "Item name 2",
-      price: 100
-  }];
-// It's a data format example.
-function priceFormatter(cell, row){
-  return '<i class="glyphicon glyphicon-usd"></i> ' + cell;
-}
+import SimpleTable from './SimpleTable';
+import SelectRow from './SelectRow';
 
 const Root = () => (
   <div>
-  <BootstrapTable data={products} striped={true} hover={true} bordered>
-      <TableHeaderColumn dataField="id" isKey={true} dataAlign="center" dataSort={true}>Product ID</TableHeaderColumn>
-      <TableHeaderColumn dataField="name" dataSort={true}>Product Name</TableHeaderColumn>
-      <TableHeaderColumn dataField="price" dataFormat={priceFormatter}>Product Price</TableHeaderColumn>
-  </BootstrapTable>
+    <SimpleTable />
+    <hr />
+    <SelectRow />
   </div>
-)
+);
 
-export default Root
+export default Root;
