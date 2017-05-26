@@ -18,6 +18,11 @@ function priceFormatter(cell, row){
 
 const Root = () => (
   <div>
+    <p>
+      <a href='http://allenfang.github.io/react-bootstrap-table/docs.html#selectRow'>
+        http://allenfang.github.io/react-bootstrap-table/docs.html#selectRow
+      </a>
+    </p>
     <BootstrapTable
       data={products}
       striped={true}
