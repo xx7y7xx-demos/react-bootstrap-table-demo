@@ -2,12 +2,15 @@ import React from 'react'
 
 import SimpleTable from './SimpleTable';
 import SelectRow from './SelectRow';
+import CellEdit from './CellEdit';
+import CellEditBlurToSave from './CellEditBlurToSave';
 
 const Root = () => (
   <div>
     <SimpleTable />
-    <hr />
     <SelectRow />
+    <CellEdit />
+    <CellEditBlurToSave />
   </div>
 );
 
