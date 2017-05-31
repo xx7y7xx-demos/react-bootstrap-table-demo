@@ -1,9 +1,10 @@
 import React from 'react'
 
-import SimpleTable from './SimpleTable';
-import SelectRow from './SelectRow';
 import CellEdit from './CellEdit';
 import CellEditBlurToSave from './CellEditBlurToSave';
+import SelectRow from './SelectRow';
+import SimpleTable from './SimpleTable';
+import TableStyle from './TableStyle';
 
 const Root = () => (
   <div>
@@ -11,6 +12,7 @@ const Root = () => (
     <SelectRow />
     <CellEdit />
     <CellEditBlurToSave />
+    <TableStyle />
   </div>
 );
 

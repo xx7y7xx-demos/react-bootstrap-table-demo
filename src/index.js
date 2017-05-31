@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 
 import Root from './containers/Root';
+import './assets/style.less';
 
 const render = () => {
   ReactDOM.render(
